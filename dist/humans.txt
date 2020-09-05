@@ -1,0 +1,23 @@
+/* Restaurant Monterrey */
+/* Proyecto de evaluación técnica para la contratación como Desarrollador Web. */
+
+/* TEAM */
+Fundador: Alejandro González Reyes
+Site: https://github.com/alexglzrys/
+Contacto: alexglzrys[at]gmail.com
+Twitter: @alexglzrys
+Location: Lerma México
+
+/* THANKS */
+@jonmircha
+
+/* SITE */
+Last update: 2020/09/04
+Language: Español
+Standars: HTML5, CSS3, JavaScript, jQuery
+Components: Animate.css, SuperSlides, Slick, iLightBox, FontAwesome
+Methodologies: Mobile First, BEM, Responsive Web Design
+
+Software: SublimeText3
+
+/* http://humanstxt.org */

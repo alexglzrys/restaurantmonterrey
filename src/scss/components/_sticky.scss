@@ -1,0 +1,35 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-blanco;
+    box-shadow: 0 0 10px 2px $sombra;
+    z-index: 200;
+    transition: all .2s;
+    &::after {
+        content: "";
+        background-image: url('assets/images/bg/border.png');
+        background-repeat: repeat-x;
+        background-size: contain;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        right: 0;
+        height: 7px;
+    }
+    &.menu {
+        .menu__bars {
+            border-color: #1a1a1a;
+        }
+        .menu__icon {
+            color: #1a1a1a;
+        }
+        .navigator__link {
+            color: $color-negro;
+            &:hover {
+                color: $color-marron;
+            }
+        }
+    }
+}

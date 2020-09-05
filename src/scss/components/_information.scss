@@ -1,0 +1,18 @@
+.information {
+    flex-basis: 34%;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    @media screen and (min-width: $tablet) {
+        flex-basis: 34%;
+        margin-top: 0;
+    }
+    &__item {
+        margin-bottom: 1rem;
+        color: $texto;
+        line-height: 1.5;
+    }
+    &__icon {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

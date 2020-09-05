@@ -1,0 +1,32 @@
+section.contact#contact
+    .contact__container
+        h3.contact__title Contactanos
+        p.contact__description El objetivo más importante para el crecimiento y desarrollo de nuestro negocio, se deriva de una atenta satisfacción de nuestros clientes, así como la capacitación permanente de nuestro personal.
+        .contact__body
+            form.form(action="#", method="post")
+                div.form__group
+                    label.form__label(for="name") Nombre #[span.form__required *]
+                    input.form__input#name(type="text", name="name", required, placeholder="Ingrese su nombre completo")
+                div.form__group
+                    label.form__label(for="email") Correo electrónico #[span.form__required *]
+                    input.form__input#email(type="email", required, name="email" placeholder="Ingrese su correo electrónico")
+                div.form__group
+                    label.form__label(for="message") Mensaje #[span.form__required *]
+                    textarea.form__textarea#message(name="message", required placeholder="Ingrese el contenido de su mensaje")
+                button.form__button(type="submit") Enviar
+            ul.information
+                li.information__item
+                    i.far.fa-envelope.information__icon
+                    | info@monterrey.com
+                li.information__item
+                    i.fas.fa-link.information__icon
+                    | www.monterrey.com
+                li.information__item
+                    i.fas.fa-phone-volume.information__icon
+                    | 713 1085064
+                li.information__item
+                    i.far.fa-clock.information__icon
+                    | 9:00 AM - 11:00 PM
+                li.information__item
+                    i.fas.fa-map-marker-alt.information__icon
+                    | Avenida Libertad # 20. San Miguel Almaya, Capulhuac México.

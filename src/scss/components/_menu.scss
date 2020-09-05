@@ -1,0 +1,39 @@
+.menu {
+    background-color: #212324;
+    @media screen and (min-width: $tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: transparent;
+    }
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: .8em 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (min-width: $tablet) {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+    &__image {
+        display: block;
+        width: 100px;
+    }
+    &__bars {
+        font-size: 1.5rem;
+        border: 1px solid $color-blanco;
+        padding: .3rem;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+    &__icon {
+        color: $color-blanco;
+    }
+}

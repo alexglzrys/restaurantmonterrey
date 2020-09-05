@@ -1,0 +1,62 @@
+.reservation {
+    padding: 3rem 1rem;
+    background-image: url('assets/images/bg/reservation.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url('assets/images/bg/pattern.png');
+        background-color: $color-negro;
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__container {
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    &__title {
+        color: $color-blanco;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.7rem;
+        text-align: center;
+        @media screen and (min-width: $tablet) {
+            font-size: 2.2rem;
+        }
+    }
+    &__button {
+        color: $color-marron;
+        font-weight: bold;
+        font-size: .9rem;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: $color-blanco;
+        transition: all .3s;
+        @media screen and (min-width: $tablet) {
+            font-size: .8rem
+        }
+        &:hover {
+            background-color: $color-marron;
+            color: $color-blanco;
+        }
+    }
+}

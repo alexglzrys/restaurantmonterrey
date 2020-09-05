@@ -1,0 +1,61 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: $texto;
+    justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+        flex-basis: 60%;
+    }
+    &__group {
+        margin-bottom: 1rem;
+        width: 100%;
+        @media screen and (min-width: $tablet) {
+            width: 48%;
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+    }
+    &__label {
+        display: block;
+        margin-bottom: .5rem;
+        cursor: pointer;
+    }
+    &__input, &__textarea {
+        padding: .8rem .5rem;
+        border: 1px solid $color-gris;
+        border-radius: 3px;
+        width: 100%;
+        background-color: #f8f7fb;
+        color: $texto;
+        transition: all .3s;
+        &:focus {
+            background-color: #fbfafd;
+        }
+    }
+    &__textarea {
+        font-family: 'Lato', sans-serif;
+        height: 115px;
+        resize: none;
+    }
+    &__required {
+        color: $color-marron;
+    }
+    &__button {
+        color: $color-marron;
+        font-size: .9rem;
+        display: inline-block;
+        padding: .8rem 2.5rem;
+        border: 1px solid $color-marron;
+        background-color: $color-blanco;
+        color: $color-marron;
+        transition: all .3s;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-marron;
+            color: $color-blanco;
+        }
+    }
+}

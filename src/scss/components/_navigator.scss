@@ -1,0 +1,33 @@
+.navigator {
+    display: none;
+    flex-basis: 100%;
+    @media screen and (min-width: $tablet) {
+        flex-basis: auto;
+        display: block !important;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            margin-top: 0;
+        }
+    }
+    &__item {
+
+    }
+    &__link {
+        color: $color-blanco;
+        display: block;
+        padding: .7rem .8rem;
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        transition: all .3s;
+        &:hover {
+            color: $color-marron;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.contact {
+    padding: 6rem 1rem;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background-image: url('assets/images/bg/border.png');
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: contain;
+        transform: rotate(180deg);
+        height: 7px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -7px;
+        z-index: 10;
+    }
+    &::after {
+        top: inherit;
+        bottom: -7px;
+        transform: rotate(0);
+    }
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    &__title {
+        font-family: 'Dancing Script', cursive;
+        color: $color-marron;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+        text-align: center;
+        @media screen and (min-width: $tablet) {
+            font-size: 4rem;
+        }
+        &::after {
+            content: "";
+            background-image: url('assets/images/bg/marron.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 30px;
+            display: block;
+        }
+    }
+    &__description {
+        text-align: center;
+        color: $texto;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        margin-bottom: 3rem;
+        @media screen and (min-width: $tablet) {
+            width: 70%;
+            margin-bottom: 4rem;
+        }
+    }
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+}

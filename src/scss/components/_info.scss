@@ -1,0 +1,65 @@
+.info {
+    border-bottom: 1px solid #B8B8B8;
+    &__container {
+        max-width: 1100px;
+        padding: 0 1rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contact {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            align-items: center;
+        }
+        &-info {
+            letter-spacing: 0.2px;
+            line-height: 1.5rem;
+            color: $color-blanco;
+            font-size: .8rem;
+            @media screen and (min-width: $tablet) {
+                font-size: .9rem;
+                margin-right: 1.5rem;
+                line-height: 2.8rem;
+            }
+        }
+        & p:nth-of-type(2) {
+            flex-grow: 1;
+        }
+        &-link {
+            color: $color-blanco;
+        }
+        &-icon {
+            margin-right: .4rem;
+        }
+        &-button {
+            position: absolute;
+            right: 0;
+            background-color: $color-marron;
+            color: $color-blanco;
+            padding: .9em 1.5em;
+            display: inline-block;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: .6em;
+            transition: all .3s;
+            @media screen and (min-width: $tablet) {
+                position: static;
+                font-size: .7rem;
+            }
+            &:hover {
+                background-color: $color-blanco;
+                color: $color-marron;
+            }
+        }
+    }
+}

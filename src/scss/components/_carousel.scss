@@ -1,0 +1,25 @@
+.carousel {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    * {
+        margin: 0 auto;
+    }
+    @media screen and (min-width: $tablet) {
+        * {
+            margin: 0;
+        }
+    }
+    .slick-dots {
+        bottom: -35px;
+        button::before {
+            color: $color-gris;
+            font-size: .6rem;
+        }
+        li.slick-active {
+            button::before {
+                color: $color-blanco;
+            }
+        }
+    }
+}

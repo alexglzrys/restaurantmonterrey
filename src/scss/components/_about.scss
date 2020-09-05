@@ -1,0 +1,71 @@
+.about {
+    // Fix - Camera posiciona el elemento mediante float
+    clear: both;
+
+    //min-height: 100vh;
+	background-image: url('assets/images/bg/about.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	padding: 6em 0;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        background-image: url('assets/images/bg/border.png');
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: contain;
+        height: 7px;
+        transform: rotate(180deg);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -7px;
+        z-index: 10;
+    }
+    &::after {
+        top: inherit;
+        bottom: -7px;
+        transform: rotate(0);
+    }
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    &__title {
+        font-family: 'Dancing Script', cursive;
+        color: $color-marron;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+        text-align: center;
+        @media screen and (min-width: $tablet) {
+            font-size: 4rem;
+        }
+    }
+    &__paragraph {
+        letter-spacing: 0.2px;
+        line-height: 1.7em;
+        color: $texto;
+        @media screen and (min-width: $tablet) {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+    }
+    &__newline {
+        display: block;
+        margin-top: 1rem;
+        @media screen and (min-width: $tablet) {
+            display: inline;
+            margin-top: 0;
+        }
+    }
+}

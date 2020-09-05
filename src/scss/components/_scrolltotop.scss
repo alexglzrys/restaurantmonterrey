@@ -1,0 +1,21 @@
+.scrolltotop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    background-color: $color-marron;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: all .5s;
+    &:hover {
+        background-color: #1a1a1a;
+    }
+    &__icon {
+        color: $color-blanco;
+    }
+}
