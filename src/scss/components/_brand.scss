@@ -1,0 +1,9 @@
+.brand {
+    &__image {
+        display: block;
+        width: 100px;
+    }
+    &__title {
+        display: none;
+    }
+}
